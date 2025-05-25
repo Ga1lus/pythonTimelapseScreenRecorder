@@ -393,7 +393,7 @@ def promptTUI(*args, normalColour = reset, cursorColour = bg_blue, chosenColour 
 	os.system("stty sane")
 
 
-def splitScreenPrint(*args):
+def splitScreenPrint(*args): #work in progress
 	tWidth, tLength = os.get_terminal_size()
 	splits = len(args)
 	splitSize = int((tWidth - splits) / splits)
